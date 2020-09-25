@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Projeto desenvolvido para a disciplina de Design de Interface Humano Computador,
+    apresentando-se alguns padrões de projeto de interface com a implementação de algumas recomendações de acessibilidade para desenvolvimento de websites.">
+    <title>Projeto de IHC</title>
+
+    <!-- Template do Bootstrap utilizado para esse projeto -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/carousel/">
+    <link href="/PA/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/PA/css/carousel.css" rel="stylesheet">
+
+  </head>
+  <body>
+  <header>
+  
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Design de Interface Humano Computador</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Topo<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#recomendacoes">Recomendações de Acessibilidade<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#carousel">Carousel<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#pull">Pull to Refresh<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#cards">Cards<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+</header>
+
+<main role="main">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="/PA/img/ifpr.jpg" alt="Entrada IFPR Campus Palmas" width=60 height=40>
+      </div>
+
+      <!-- Descrição e Resumo do Trabalho -->
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Introdução</h1>
+            <p>Este website possui a finalidade de apresentar alguns padrões de projeto de interface, suas descrições, seus casos de uso e exemplos, ao mesmo tempo que faz o uso de 
+            recomendações de acessibilidade presentes no e-MAG (Modelo de Acessibilidade em Governo Eletrônico) Versão 3.1.
+            </p>
+            <p>Foi desenvolvido como requisito parcial à aprovação na 
+            disciplina de Design de Interface Humano Computador, ministrada pela Profa. Dra. Andreia Marini no Instituto Federal do Paraná Campus Palmas.
+            </p>
+            <p><a class="btn btn-lg btn-primary" href="https://palmas.ifpr.edu.br/" role="button">Conheça o IFPR Campus Palmas</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Padrões de Projeto de Interface</h1>
+            <p>São estruturas de interação que foram analisadas, estudadas e aceitas em determinados ambientes, devido ao seu grau de repetição (prática comum) e verificação de funcionamento.</p>
+            <p>“Bons padrões de interface humano computador são os que favorecem tantos aos desenvolvedores, proporcionando-lhes eficiência na programação, como aos usuários, oferecendo-lhes
+            usabilidade nas interações com o sistema.” (CYBIS, BETIOL, FAUST, 2015)</p>
+            <p><a class="btn btn-lg btn-primary" href="http://ui-patterns.com/patterns" role="button">Conheça alguns Padrões</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>e-MAG</h1>
+            <p>O governo brasileiro, comprometido com a inclusão, buscou, através da elaboração do Modelo de acessibilidade do governo eletrônico, facilitar o acesso para todas as pessoas
+               às informações e serviços disponibilizados nos sítios e portais do governo.
+            </p>   
+            <p>
+               O eMAG foi desenvolvido em 2004 baseado no estudo de 14 normas existentes em outros países acerca de acessibilidade digital. Dentre as normas analisadas estavam a Section 508 do governo dos Estados Unidos, os padrões CLF do Canadá, as diretrizes irlandesas de acessibilidade
+               e documentos de outros países como Portugal e Espanha.
+            </p>
+            <p><a class="btn btn-lg btn-primary" href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital/eMAGv31.pdf/@@download/file/eMAGv31.pdf" role="button">Conheça o e-MAG</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+
+
+<h2 class = "featurette-heading" id= recomendacoes style="text-align:center;margin-bottom:5%">Recomendações de Acessibilidade</h2>
+
+  <!-- Recomendações de Acessibilidade -->
+  <div class="container marketing" >
+
+    <div class="row">
+      <div class="col-lg-4">
+        <h2>Recomendação 1.1</h2>
+        <p><strong>Respeitar os padrões web:</strong> fazendo o uso de boas práticas, usando HTML5, CSS, SVG, AJAX, e realizando separação de camadas.
+        Assim, para a camada de conteúdo devem ser utilizadas as linguagens de marcação, como HTML e xHTML. Para a camada de apresentação visual do conteúdo, utilizam-se as folhas de estilo css em qualquer uma
+        de suas versões. Já para a camada que modifica o comportamento dos elementos, são utilizadas linguagens javascript e modelos de objeto (dom).</p>
+      </div>
+     
+      <div class="col-lg-4">
+        <h2>Recomendação 1.2</h2>
+        <p><strong>Organizar o código HTML de forma lógica e semântica:</strong> ou seja, apresentando os elementos em uma ordem compreensível e correspondendo ao conteúdo desejado. Cada elemento HTML deve ser utilizado 
+        para o fim que ele foi criado. Assim, marcação semântica adequada deve ser utilizada para designar os cabeçalhos (h1, h2, h3), as listas (ul, ol, dl), texto enfatizado (strong), marcação de código (code),
+        marcação de abreviaturas (abbr), marcação de citações longas (blockquote), etc</p>
+      </div>
+     
+      <div class="col-lg-4">
+        <h2>Recomendação 1.3</h2>
+        <p><strong>Utilizar corretamente os níveis de cabeçalho:</strong> os níveis de cabeçalho (elementos HTML H1 a H6) devem ser utilizados de forma hierárquica, pois organizam a ordem de importância e subordinação
+         dos conteúdos, facilitando a leitura e compreensão.</p>
+      </div>
+    </div>
+
+  
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Recomendação 1.5</h2>
+          <p><strong>Fornecer âncoras para ir direto a um bloco de conteúdo:</strong> devem ser fornecidas âncoras, disponíveis na barra de acessibilidade, que apontem para links relevantes presentes na mesma página. Assim, é possível ir ao bloco de conteúdo desejado.</p>
+        </div>
+     
+        <div class="col-lg-4">
+          <h2>Recomendação 1.7</h2>
+          <p><strong>Separar links adjacentes:</strong> links adjacentes devem ser separados por mais do que simples espaços, para que não fiquem confusos, em especial para usuários que utilizam leitor de tela. Para isso, é recomendado o uso de listas, onde cada elemento
+          dentro da lista é um link. As listas podem ser estilizadas visualmente com CSS para que os itens sejam mostrados da maneira desejada, como um ao lado do outro.</p>
+        </div>
+     
+        <div class="col-lg-4">
+          <h2>Recomendação 3.1</h2>
+          <p><strong>Identificar o idioma principal da página:</strong> deve-se identificar o principal idioma utilizado nos documentos. A identificação é feita por meio do atributo lang do HTML e, para documentos XHTML, é utilizado o xml:lang. Ele deve ser declarado em todas as páginas, pois além de auxiliar na acessibilidade do
+          conteúdo, também permite melhor indexação pelos motores de busca.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Recomendação 3.3</h2>
+          <p><strong>Oferecer um título descritivo e informativo à página:</strong> o título da página deve ser descritivo e informativo, devendo representar o conteúdo principal da página, já que essa informação será a primeira lida pelo leitor de tela, quando o usuário acessar a página.</p>
+        </div>
+     
+        <div class="col-lg-4">
+          <h2>Recomendação 3.6</h2>
+          <p><strong>Fornecer alternativa em texto para as imagens do sítio:</strong> deve ser fornecida uma descrição para as imagens da página, utilizando-se, para tanto o atributo alt. No caso de banners e outras imagens que reproduzam textos, o ideal é reproduzir o texto escrito.</p>
+        </div>
+     
+        <div class="col-lg-4">
+          <h2>Recomendação 4.1</h2>
+          <p><strong>Oferecer contraste mínimo entre plano de fundo e primeiro plano</strong> as cores do plano de fundo e do primeiro plano deverão ser suficientemente contrastantes para que possam ser visualizadas, também, por pessoas com baixa visão, com cromodeficiências ou que utilizam monitores de vídeo monocromático.
+          Não deverão ser utilizadas imagens atrás do texto (background), pois acabam por dificultar a leitura e desviar a atenção do usuário.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container marketing">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4" >
+          <h2>Recomendação 4.3</h2>
+          <p><strong>Permitir redimensionamento sem perda de funcionalidade:</strong> a página deve continuar legível e funcional mesmo quando redimensionada para até 200%. Assim, é preciso garantir que, quando a página for redimensionada, não ocorram sobreposições nem o aparecimento de uma barra horizontal.</p>
+        </div>
+      </div> 
+    </div>
+    
+    <p class="float-right"><a href="#">Voltar ao topo</a></p>
+    <hr class="featurette-divider">
+    
+    <!--Três padrões de projeto de Interface-->
+    <h2 class = "featurette-heading" id= recomendacoes style="text-align:center;margin-bottom:5%">Padrões de Projeto de Interface</h2>
+    <div class="row featurette">
+      <div class="col-md-12" id="carousel">
+        <h2 class="featurette-heading">Carousel</h2>
+        <p class="lead"><strong>Descrição:</strong>Uma lista de itens é organizada de maneira horizontal, por meio da qual o usuário pode visualizar e 
+        navegar pelos itens de maneira fácil e rápida</p>
+        <p class="lead"><strong>Resumo do Problema:</strong>"O usuário precisa navegar por uma lista de itens e possivelmente selecionar um deles"</p>
+        <p class="lead"><strong>Recomendações de Uso:</strong></p>
+        <li>Use quando você tem uma grande quantidade de itens pra mostrar, mas quer permitir que o usuário se concentre em apenas alguns itens por vez;</li>
+        <li>Use quando você quer mostrar ao usuário que existem mais itens disponíveis do que apenas os que estão sendo mostrados atualmente;</li>
+        <li>Use quando você não tem espaço disponível para mostrar todos os itens de uma vez;</li>
+        <li>Use quando você tem itens essencialmente visuais a serem mostrados, como pôsteres de filmes, capas de álbuns, produtos, etc.;</li>
+        <li>Não use quando os itens não são visuais, como links para artigos, documentos de PDF, etc.</li>
+        <li>Não use quando o conteúdo ao qual está vinculado não pode ser imediatamente idenficado por uma imagem</li>
+        
+      </div>
+      <div class="col-md-12">
+       <video controls poster="" width=24.0%>
+        <source src="/PA/img/carouselfb.mp4" type="video/mp4">
+        <object>
+          <embed src="/PA/img/carouselfb.mp4" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always">  		
+       </object>
+       Formato não suportado  
+      </video>
+        <video controls poster="" width=24.0%>
+        <source src="/PA/img/carouselml.mp4" type="video/mp4">
+        <object>
+          <embed src="/PA/img/carouselml.mp4" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always">  		
+       </object>
+       Formato não suportado  
+      </video>
+      <video controls poster="" width=24.0%>
+        <source src="/PA/img/carouselps.mp4" type="video/mp4">
+        <object>
+          <embed src="/PA/img/carouselps.mp4" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always">  		
+       </object>
+       Formato não suportado  
+      </video>
+      <video controls poster="" width=24.0%>
+        <source src="/PA/img/carouselspotify.mp4" type="video/mp4">
+        <object>
+          <embed src="/PA/img/carouselspotify.mp4" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always">  		
+       </object>
+       Formato não suportado  
+      </video>
+    </div>  
+    </div>
+    <div class="container marketing">
+      <p class="float-right" style="margin-top:3%"><a href="#">Voltar ao topo</a></p>
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12" id="pull">
+        <h2 class="featurette-heading">Pull to Refresh</h2>
+        <p class="lead"><strong>Descrição:</strong>O usuário faz um movimento de arrastar com o dedo, de cima para baixo, para atualizar a tela atual;</p>
+        <p class="lead"><strong>Resumo do Problema:</strong>"O usuário quer recuperar mais dados ou atualizar conteúdos já disponíveis na tela";</p>
+        <p class="lead"><strong>Recomendações de Uso:</strong></p>
+        <ul>
+          <li>Usado para atualizar qualquer conteúdo, como listas, listas de grade e coleções de cartões que são classificadas em ordem cronológica reversa;</li>
+          <ul>
+            <li>Feed de Conteúdo (Facebook, Instagram, Twitter);</li>  
+            <li>Inbox (Email, Mensagens de Texto);</li>  
+          </ul>
+          <li>Usado para atualizar uma página inteira ou um widget;</li>
+          <ul>
+            <li>Página do Navegador;</li>
+          </ul>
+          <li>Usado quando feito o design para interfaces touchscreen;</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-12">
+       <video controls poster="" width=24.0%>
+        <source src="/PA/img/pullbrowser.mp4" type="video/mp4">
+        <object>
+          <embed src="/PA/img/pullbrowser.mp4" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always">  		
+       </object>
+       Formato não suportado  
+      </video>
+        <video controls poster="" width=24.0%>
+        <source src="/PA/img/pullfb.mp4" type="video/mp4">
+        <object>
+          <embed src="/PA/img/pullfb.mp4" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always">  		
+       </object>
+       Formato não suportado  
+      </video>
+      <video controls poster="" width=24.0%>
+        <source src="/PA/img/pullgmail.mp4" type="video/mp4">
+        <object>
+          <embed src="/PA/img/pullgmail.mp4" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always">  		
+       </object>
+       Formato não suportado  
+      </video>
+      <video controls poster="" width=24.0%>
+        <source src="/PA/img/pullig.mp4" type="video/mp4">
+        <object>
+          <embed src="/PA/img/pullig.mp4" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always">  		
+       </object>
+       Formato não suportado  
+      </video>
+    </div>  
+    
+    <p class="float-right" style="margin-top:3%"><a href="#">Voltar ao topo</a></p>
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-12" id="cards">
+        <h2 class="featurette-heading">Cards</h2>
+        <p class="lead"><strong>Descrição:</strong> Os cards são utilizados para agrupar informações e componentes de design em um container de tamanho flexível,
+          que lembra visualmente uma carta de baralho, dando uma sensação de relevo, profundidade;</p>
+        <p class="lead"><strong>Resumo do Problema:</strong> “O usuário precisa navegar por conteúdos de variados tipos e tamanhos”;</p>
+        <p class="lead"><strong>Recomendações de Uso:</strong></p>
+        <ul>
+          <li>Usado para apresentar conteúdo composto de diferentes elementos;</li>
+          <li>Usado para mostrar elementos cujo tamanho ou ações variam, como por exemplo, fotos com legendas de tamanhos variados;</li>
+          <li>Usado para apresentar conteúdo que:</li>
+          <ul>
+            <li>Em uma coleção, consiste de múltiplos tipos de dados (imagens, vídeos, texto);</li>
+            <li>Contém conteúdo interativo;</li>
+            <li>Suporta conteúdo de tamanho variável (legendas, comentários);</li>
+          </ul>
+          <li>Usado para unir vários pedaços de informação sobre um único assunto para formar um pedaço de conteúdo coerente;</li>
+          <li>Recomendado quando usuários pesquisam por informações;</li>
+          <li>Funcionam melhor em coleções de itens heterogêneos (quando o conteúdo não é todo do mesmo tipo básico);</li>
+        </ul>  
+      </div>
+      <div class="col-md-12">
+        <video controls poster="/PA/img/OneUi.jpg" width=100%>
+        <source src="/PA/img/OneUI.mp4" type="video/mp4">
+        <object>
+          <embed src="/PA/img/OneUI.mp4" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always">  		
+       </object>
+       Formato não suportado  
+      </video>
+      </div>
+    </div>
+      <div class="col-md-12">
+        <img src="/PA/img/cardconf.png" alt="Exemplo do Padrão de Projeto de Interface Card no aplicativo Configurações em um celular Samsung" width=24.0% height=>
+        <img src="/PA/img/cardmsg.png" alt="Exemplo do Padrão de Projeto de Interface Card no aplicativo Mensagens em um celular Samsung" width=24.0% height=>
+        <img src="/PA/img/cardfb.png" alt="Exemplo do Padrão de Projeto de Interface Card no aplicativo Facebook em um celular Samsung" width=24.0% height=>
+        <img src="/PA/img/cardml.png" alt="Exemplo do Padrão de Projeto de Interface Card no aplicativo MercadoLivre em um celular Samsung" width=24.0% height=>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+  <footer class="container">
+    <p class="float-right"><a href="#">Voltar ao topo</a></p>
+    <p>&copy;2020 Eruz Vinicius Hüffner Lourenço. Sistemas de Informação. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos de Uso</a></p>
+  </footer>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/PA/js/vendor/jquery.slim.min.js"><\/script>')</script>
+      <script src="/PA/js/bootstrap.bundle.min.js"></script>
+</html>
